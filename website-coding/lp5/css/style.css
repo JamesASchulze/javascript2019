@@ -1,0 +1,30 @@
+body{
+	background-color: Khaki;
+	color: Brown; 
+	padding-left: 50px;
+	background-image: url("../images/pawprint.png");
+	background-repeat: repeat-y;
+}
+.largeFont {
+	font-size: xx-large;
+}
+#background {
+	background-image: url("../images/pawprint.png");
+	background-repeat: repeat-x;
+
+}
+#header {
+	color: black;
+	background-image: url("../images/grass.png"); 
+	background-repeat: repeat-x;
+	padding-left: 50px;
+}
+#footer {
+	background: url("../images/pawprint.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+
+}
+#h1 {
+	color: Brown;
+}

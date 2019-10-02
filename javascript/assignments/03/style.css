@@ -1,0 +1,29 @@
+html {
+   /* background-color: blue; */
+}
+
+h1 {
+   background-color: gray;
+   color: white;
+   display: block;
+   padding: 5px 10px;
+   border-radius: 5px;
+}
+
+h2 {
+   background-color: teal;
+   color: white;
+   display: block;
+   padding: 10px 15px;
+   border-radius: 5px;
+}
+
+li {
+   background-color: teal;
+   color: white;
+   padding: 10px 15px;
+}
+
+li > span {
+   color: red;
+}
