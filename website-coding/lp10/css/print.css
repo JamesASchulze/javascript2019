@@ -1,0 +1,119 @@
+body {
+	color: #ffffff;
+	/*background-color:white;*/
+	margin: 0;
+}
+
+header {
+	display:none;
+}
+
+nav {
+	display: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited {
+	color: #ffffff;
+}
+
+a:hover {
+	text-decoration: underline;
+	
+}
+
+body{
+
+    background-color:white;
+    margin: 0;
+    font-family: "arial", Georgia, Serif;
+}
+
+h1 {
+    width: 80%;
+    margin: 0 auto;
+    background-color:white;
+    border-radius: 20px;
+}
+
+h2{
+
+    font-size: 2em;
+    font-family: "arial", Georgia, Serif;
+    background-color:white;
+    color:#000;
+    text-align: center;
+
+}
+
+
+/* --- Header Styles --- */
+header {
+
+    background-color: #999;
+
+    text-align: center;
+
+}
+
+#wrapper{
+
+    background-color:white;
+    width: 960px;
+    margin:0 auto;
+}
+
+
+img{
+    width: 200px;
+}
+
+nav {
+    display:none;
+}
+
+section{
+    width:100%;
+    color:black;
+    padding: 0 10px;
+    background-color:white;/* Sets a color if the gradient fails */  
+
+}
+
+
+
+footer{
+    padding: 20px;
+    text-align: center;
+    background-color: #F4F2F2;
+    clear:both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

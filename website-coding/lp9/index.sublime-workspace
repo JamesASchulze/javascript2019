@@ -1,0 +1,290 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"font-s",
+				"font-size"
+			],
+			[
+				"auto",
+				"autofocus\tAttr"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"border",
+				"border-style"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"photo",
+				"photo1"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"background",
+				"background-repeat"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"backg",
+				"background-position"
+			],
+			[
+				"background-",
+				"background-repeat"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/qwerty/Desktop/James School/Web development/my website/httpdocs/lp9/css/style.css",
+		"/Users/qwerty/Desktop/James School/Web development/my website/httpdocs/lp9/Walking/index.html",
+		"/Users/qwerty/Desktop/James School/Web development/my website/httpdocs/lp9/Feeding/index.html",
+		"/Users/qwerty/Desktop/James School/Web development/my website/httpdocs/lp9/Grooming/index.html",
+		"/Users/qwerty/Desktop/James School/Web development/my website/httpdocs/lp9/index.html",
+		"/Users/qwerty/Desktop/James School/Web development/index.html",
+		"/Users/qwerty/Desktop/James School/Web development/my website/httpdocs/css/style.css",
+		"/Users/qwerty/Desktop/James School/Web development/my website/httpdocs/index.html",
+		"/Users/qwerty/Desktop/James School/Web development/my website/httpdocs/wrH/atheismexposed.html",
+		"/Users/qwerty/Desktop/James School/College 101/Journal entry 3",
+		"/Users/qwerty/Desktop/James School/College 101/journal entry 2",
+		"/Users/qwerty/Desktop/James School/Program Logic/Assignment #10/Debug exercise assignment #10 sublime",
+		"/Users/qwerty/Desktop/index.html",
+		"/Users/qwerty/Desktop/James School/Program Logic/Assignment #10/Exercise 10 Assignment #10 sublime",
+		"/Users/qwerty/Desktop/James School/Web development/my website/httpdocs/wrG/sitepoint.com.html",
+		"/Users/qwerty/Desktop/James School/Web development/my website/httpdocs/wrF/PerishablepressProgressiveEnhancement.html",
+		"/Users/qwerty/Desktop/James School/Web development/Hands On Practice/RYGBtest.html",
+		"/Users/qwerty/Desktop/James School/Program Logic/debug assignment 9 sublime",
+		"/Users/qwerty/Desktop/James School/Program Logic/exercise2assignment#9sublime",
+		"/Users/qwerty/Desktop/James School/Program Logic/exercise 5a assignment 9 sublime",
+		"/Users/qwerty/Desktop/James School/Web development/my website/index.html",
+		"/Users/qwerty/Desktop/James School/Web development/Hands On Practice/Positioning Practice/css/style.css",
+		"/Users/qwerty/Desktop/James School/Web development/Hands On Practice/Positioning Practice/index.html",
+		"/Users/qwerty/Desktop/lp6.6/evening/index.html",
+		"/Users/qwerty/Desktop/lp6.6/day/morning/index.html",
+		"/Users/qwerty/Desktop/lp6.6/day/afternoon/index.html",
+		"/Users/qwerty/Desktop/lp6.6/css/style.css",
+		"/Users/qwerty/Desktop/lp6.6/alternate/online/blackboard/index.html",
+		"/Users/qwerty/Desktop/lp6.6/index.html",
+		"/Users/qwerty/Desktop/James School/Program Logic/Problem 2 for Assignment 8",
+		"/Users/qwerty/Desktop/James School/Web development/my website/httpdocs/wrE/answersingenesis.html",
+		"/Users/qwerty/Desktop/James School/Web development/lp5 2/css/style.css",
+		"/Users/qwerty/Desktop/James School/Web development/lp4/index.html",
+		"/Users/qwerty/Desktop/James School/Program Logic/EXERCISE 12 for Assignment #5",
+		"/Users/qwerty/Desktop/James School/Program Logic/EXERCISE 13 for Assignment #6",
+		"/Users/qwerty/Desktop/James School/Program Logic/Exercise 10 for Assignment #6",
+		"/Users/qwerty/Desktop/James School/Program Logic/DEBUG exercise for Assignment #6",
+		"/Users/qwerty/Desktop/James School/Program Logic/EXERCISE 8 for Assignment #5",
+		"/Users/qwerty/Desktop/James School/Web development/lp5/Feeding/index.html",
+		"/Users/qwerty/Desktop/James School/Web development/lp5/Walking/index.html",
+		"/Users/qwerty/Desktop/James School/Web development/lp5/index.html",
+		"/Users/qwerty/Desktop/James School/Web development/lp5/Grooming/index.html",
+		"/Users/qwerty/Desktop/James School/Web development/wrD/css/style.css",
+		"/Users/qwerty/Desktop/James School/Program Logic/DEBUG exercise for Assignment #5",
+		"/Users/qwerty/Desktop/James School/Web development/wrB/Wikipedia'sFAQpage.html",
+		"/Users/qwerty/Desktop/HELLO, MY NAME IS... AVA",
+		"/Users/qwerty/Downloads/CSS Example/index.html",
+		"/Users/qwerty/Desktop/James School/Web development/textaligntest.html",
+		"/Users/qwerty/Downloads/CSS Example/css/style.css",
+		"/Users/qwerty/Desktop/James School/Web development/lp4/css/style.css",
+		"/Users/qwerty/Desktop/James School/Web development/wrC/Ice_vs_Liquid_design.html",
+		"/Users/qwerty/Desktop/James School/Web development/Hands On Practice/Hands on practice 4.3/Stapling/index.html",
+		"/Users/qwerty/Desktop/James School/Web development/Hands On Practice/Hands on practice 4.3/Stapling/color.css",
+		"/Users/qwerty/Desktop/James School/Web development/Hands On Practice/mycascade/index.html",
+		"/Users/qwerty/Desktop/James School/Web development/Hands On Practice/site.css",
+		"/Users/qwerty/Desktop/James School/Web development/Hands On Practice/external2.html",
+		"/Users/qwerty/Desktop/James School/Web development/Hands On Practice/Hands on practice 4.3/CupStacking/index.html",
+		"/Users/qwerty/Desktop/James School/Web development/Hands On Practice/color.css",
+		"/Users/qwerty/Desktop/James School/Web development/Hands On Practice/Embedded2.html",
+		"/Users/qwerty/Desktop/James School/Web development/lp3/Stapling/index.html",
+		"/Users/qwerty/Desktop/James School/Web development/lp3/index.html",
+		"/Users/qwerty/Desktop/James School/Web development/lp3/CupStacking/index.html"
+	],
+	"find":
+	{
+		"height": 0.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Desktop/James School/Program Logic/DEBUG exercise for Assignment #5"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 171.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

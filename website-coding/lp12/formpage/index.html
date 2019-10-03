@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+		<head>
+			<title>Form Page</title>
+			<meta charset="utf-8" />
+			<link rel="stylesheet" href="../css/style.css" type="text/css">
+			<link rel="stylesheet" href="../css/print.css" type="text/css" media="print">
+			<link rel="icon" type="image/x-icon" href="favicon.ico">
+		</head>
+		<body id="wrapper">
+			<header>	
+				<h1>Form Page</h1>
+			</header>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../floatedpic/index.html">Floating Image</a></li>
+				<li><a href="../video/index.html">Video</a></li>
+				<li><a href="../list/index.html">Styled List</a></li>
+				<li><a href="../table/index.html">Tables</a></li>
+				<li><a href="../formpage/index.html">Form</a></li>
+			</ul>
+		</nav>
+			<form name="demo" id="info" method="post" action="http://webdevbasics.net/scripts/demo.php">
+				<fieldset id="login">
+					<legend>Have an account? Login here:</legend>
+						<label for="user_name">User Name:</label> <input type="text" name="user_name" id="user_name" ><br>
+						<label for="password">Password:</label> <input type="password" name="password" id="password"><br>
+				</fieldset>
+		
+				<fieldset id="contact">
+					<legend>Contact Information:<br></legend>
+						<label for="first_name">First Name:</label> <input type="text" name="first_name" id="first_name" required="required" autofocus="autofocus" placeholder="Bilbo"><br>
+						<label for="last_name">Last Name:</label> <input type="text" name="last_name" id="last_name" required="required" placeholder="Baggins"><br>
+						<label for="email">Email Address:</label> <input type="email" name="email" id="email" ><br>
+						<label for="phone">Phone Number:</label> <input type="tel" name="phone" id="phone" ><br>
+						<p>What neighborhood do you live in?</p>
+						<textarea name="location" id="location"  placeholder="The Shire"></textarea><br>
+				</fieldset>	
+				<fieldset id="comments">
+					<legend>Comments and Additional Information</legend>
+					<textarea name="comment" id="comment"  placeholder="They're taking the hobbits to Isnguard"></textarea><br>
+					<input type="submit" value="Submit" id="submit"> <input type="reset" value="Reset">
+				</fieldset>
+			</form>
+	
+			<section id="art2">
+				<h2 id="red3">yada yada yada</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</section>
+			<br>
+		<footer>
+			<p>Copyright&#169; 2016 James Schulze</p>
+			<p><a href="http://validator.w3.org/check?uri=referer"><b>Valid HTML 5</b></a></p>
+			<p><a href="../../index.html">Back to James&apos;s website</a></p>
+		</footer>	
+		</body>
+</html>

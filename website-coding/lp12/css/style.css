@@ -1,0 +1,264 @@
+body {
+	background-color: #1C1C1C;
+	color: whitesmoke;
+}
+
+header {
+    background-image: url(../images/bones.png);
+    height: 70px;
+    width: auto;
+    border-radius: 10px;
+    border: 0px solid black;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    margin-left: 0 auto;
+    text-align: center;
+    padding: 5px;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 80%;
+	max-width: 819px;
+}
+
+#home {
+	margin: 0 auto
+}
+
+a {
+	list-style-type: none;
+	text-decoration: none;
+}
+
+a:visited {
+	color: green;
+	text-decoration: line-through;
+	-webkit-text-decoration: line-through;
+	-moz-text-decoration: line-through;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: red;
+	
+}
+
+#mainh2 {
+  /*!  */
+}
+
+nav {
+	padding: 1px 0px;
+	/*float: left;*/
+	width: auto;
+	border-radius: 45px;
+	border: 2px solid #FC1302B3;
+    -webkit-border-radius:45px;
+    -moz-border-radius:45px;
+  margin-left: 0 auto;
+  text-align: center;
+	
+}
+#red2 h2{
+	background-color: red;
+	display: block;
+	margin: 0px;
+	padding: 5px;
+	border-radius: 45px;
+  -webkit-border-radius:45px;
+  -moz-border-radius:45px;
+	
+	text-align: center;
+}
+
+#red3 {
+	background-color: red;
+	display: block;
+	padding: 5px;
+	border-radius: 45px;
+    -webkit-border-radius:45px;
+    -moz-border-radius:45px;
+	text-align: center;
+}
+
+table, td, th { border: 1px solid gray }
+
+#art1 {
+	background-image: url(../images/thinkn.jpg);
+	height: 558px;
+	width: 45%;
+	float: left;
+	border-radius: 10px;
+	border: 2px solid #0C275E;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+	padding: 7px;
+	margin: 5px;
+	margin-left: 34px;
+}
+
+#art2 {
+	background-image: url(../images/crosseye.jpg);
+	height: 558px;
+	width: 45%;
+	max-width: 324px;
+	float: left;
+	border-radius: 10px;
+	border: 2px solid #0C275E;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+	padding: 7px;
+	margin: 5px;
+}
+
+#art3 {
+	width: 75%;
+	border-radius: 10px;
+	border: 2px solid #0C275E;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+	padding: 7px;
+	margin: 5px;
+}
+
+
+figcaption {
+    text-align: center;
+}
+
+
+figure {
+    float: right;
+    width: 200px;
+}
+
+footer {
+	clear: both;
+}
+
+nav ul {
+	padding-left: 0px;
+	list-style-type: none;
+}
+nav li {
+	background-color: #F9E828;
+	display: inline-block;
+  padding: 0px 15px;
+	border-radius: 10px;
+	border: 1px solid #FC1302B3;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  margin-left: 0 auto;
+  text-align: center;
+}
+
+section ul {
+	list-style-image: url(../images/list.ico);
+	padding-left: 30px;
+}
+section li {
+	background-color: #F9E828;
+	max-width: 153px;
+  padding: 0px 15px;
+	border-radius: 10px;
+	border: 1px solid #FC1302B3;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  /*!  */
+  
+
+	margin-bottom: 10px;
+}
+
+form {
+	float: left;
+	width: 35%;
+	border-radius: 10px;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	box-shadow: 1px 1px 3px 4px #000;
+	-webkit-box-shadow: 1px 1px 3px 4px #000;
+	-moz-box-shadow: 1px 1px 3px 4px #000;
+	padding: 10px 20px;
+	margin: 5px;
+	margin-left: 65px;
+}
+
+figure{
+    float:right;
+    width:200px;
+}
+
+fieldset#contact label {
+    display: inline-block;
+    width: 101px;
+}
+fieldset#login label {
+    display: inline-block;
+    width: 101px;
+}
+fieldset#comments label {
+    
+    height: 50px;
+}
+
+td{
+    padding:5px;
+}
+
+tr:nth-child(even) {
+	background-color: red; 
+}
+tr:nth-child(odd) {
+	background-color: black;
+}
+
+#clear {
+	clear: both;
+}
+
+video {
+	width: 100%
+}
+
+/*iphone 4 screen size*/
+@media only screen and (max-width: 320px){
+
+	header img {
+		margin: 0 auto;
+	}
+
+	nav {
+		width: auto;
+		margin: 0 auto;
+
+	} 
+  
+	form {
+		width: auto;
+		
+	}
+	
+	video {
+		width: 100%;
+	}
+	
+	#art1 {
+		margin-left: 0px;
+		width: auto;
+		height: 629px;
+		padding-top: 25px;
+	}
+	
+	#art2 {
+		margin-left: 0px;
+		width: auto;
+		height: 620px;
+		padding-top: 18px;
+	}
+	
+  img {
+        max-width: auto;
+	}
+}

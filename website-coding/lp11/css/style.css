@@ -1,0 +1,27 @@
+body {
+	color: #E6E6E6;
+	background-color: #272822;
+	background-image: linear-gradient(to bottom, #272822, #3E3D32);
+	text-decoration: none;
+	background-repeat: no-repeat;
+	font-family: monospace, console, sans-serif;
+	
+}
+img {
+    display: inline-block;
+    width: 500px;
+    height: auto;
+}
+
+#wrapper { 
+	margin-top: 10px;
+	margin-left: auto; 
+	margin-right: auto; 
+	background-repeat: no-repeat;
+	width: 1000px; 
+	padding: 30px;
+	border: 1px solid #000000;
+	border-radius: 15px;
+	box-shadow: 10px 10px 10px #828282;
+}
+

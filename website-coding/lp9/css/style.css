@@ -1,0 +1,66 @@
+
+body{
+	background-color: Khaki;
+	color: Brown; 
+	padding-left: 50px;
+	background-image: url("../images/pawprint.png");
+	background-repeat: repeat-y;
+}
+form {
+	width: 35%;
+	border-radius: 10px;
+  -webkit-border-radius:10px;
+  -moz-border-radius:10px;
+  box-shadow: 1px 1px 3px 4px #000;
+  -webkit-box-shadow: 1px 1px 3px 4px #000;
+  -moz-box-shadow: 1px 1px 3px 4px #000;
+  padding: 10px 20px;
+}
+.largeFont {
+	font-size: xx-large;
+}
+#background {
+	background-image: url("../images/pawprint.png");
+	background-repeat: repeat-x;
+
+}
+#header {
+	color: black;
+	background-image: url("../images/grass.png"); 
+	background-repeat: repeat-x;
+	padding-left: 50px;
+}
+#footer {
+	background: url("../images/pawprint.png");
+	background-repeat: no-repeat;
+	background-position: right top;
+
+}
+#h1 {
+	color: Brown;
+}
+
+#headfloat {
+	float: right;
+	font-size: .7em;
+}
+.smallFont{
+	font-size: .5em;
+}
+
+fieldset#contact label {
+    display: inline-block;
+    width: 101px;
+}
+fieldset#login label {
+    display: inline-block;
+    width: 101px;
+}
+fieldset#pets label {
+    display: inline-block;
+    width: 45px;
+}
+fieldset#comments label {
+    
+    height: 50px;
+}
