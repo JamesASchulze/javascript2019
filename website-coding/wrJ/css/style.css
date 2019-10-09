@@ -1,0 +1,64 @@
+body {
+	color: white;
+	background-image: url(../images/background.jpg);
+	text-decoration: none;
+	background-repeat: repeat;
+	font-family: monospace, console, sans-serif;
+	
+}
+
+h1 {
+	color: red;
+}
+
+h2 {
+	color: yellow;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-image: url(../img/list.png);
+}
+
+#wrapper { 
+	width: 90%;
+	margin-top: 10px;
+	margin-left: auto; 
+	margin-right: auto; 
+	background-repeat: no-repeat; 
+	padding: 30px;
+	
+}
+
+.span {
+		color: hsl(357, 100%, 31%);
+}
+
+.green {
+	color: #87DA2D;
+}
+
+.purple {
+	color: hsl(255, 33%, 36%);
+}
+
+.transparency {
+	color: rgba(255, 255, 255, 0.6);
+
+}
+#assign {
+	background-color: #3E3D32;
+	width: 180px;
+	height: 470px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 2px;
+}
+
+#review {
+	color: #E6DB74;
+}
+
