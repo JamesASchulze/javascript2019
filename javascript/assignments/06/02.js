@@ -6,29 +6,31 @@ window.onload = function() {
    // Did I get the element?
    console.log(link);
 
-   // Add the event listener and call the pupIn function and stop it from doing what it would normally do..
-   link.addEventListener('click', pupIn, false);
-
-}
-
-function pupIn(e) {
-
-   // log the event
-   console.log(e);
-
    // Get the href and the title of the calling element to use as the 'src' and 'alt' attributes.
-   var imageLink = e.target.getAttribute("href");
-   var imageAlt = e.target.getAttribute('title');
+   var imageLink = link.getAttribute("href");
+   var imageAlt = link.getAttribute('title');
 
    // log the link and alt caption.
    console.log(imageLink);
    console.log(imageAlt);
-   e.preventDefault();
 
-   // Create and fill a new img element.
-   var elImg = document.createElement('img');
-   elImg.setAttribute('src', imageLink);
-   elImg.setAttribute('alt', imageAlt);
+   // Click event that adds a photo of a puppy to the DOM.
+   link.onclick = function() {
+
+      // Create and fill a new img element.
+      var elImg = document.createElement('img');
+      elImg.setAttribute('src', imageLink);
+      elImg.setAttribute('alt', imageAlt);
+
+      pupIn(elImg);
+      return false;
+
+   }
+}
+
+function pupIn(elImg) {
+
+
 
    // Element to insert image into.
    var elPosition = document.getElementById('dogPhoto');
