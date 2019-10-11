@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Assignment 06: Page 5</title>
+   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+   <nav><a href="index.html">Back To The Page List For Assignment 6</a></nav>
+   <h1>Page 5</h1>
+   <h2>Add Account (but not really)</h2>
+   <form method="post" action="https://www.example.org/register">
+      <label for="package" class="selectionbox" id="signupForm">Please select a package: </label>
+      <select id="package">
+         <option value="annual">1 year ($50)</option>
+         <option value="semi-annual">6 months ($30)</option>
+         <option value="monthly">1 month ($10)</option>
+         <option value="weekly">1 week ($5)</option>
+      </select>
+      <div id="packHint" class="tip"></div>
+
+      <input type="checkbox" id="terms" />
+      <label for="terms" class="checkbox"> Check if you agree to the terms &amp; conditions</label>
+      <div id="termHint" class="warning"></div>
+
+      <input type="submit" value="next" />
+   </form>
+   <a href="../../index.html">&copy; 2019 James</a>
+   <a href="https://validator.w3.org/check?uri=referer">HTML</a>
+   <a href="https://jigsaw.w3.org/css-validator/check/referer/">CSS</a>
+   <script src="05.js"></script>
+</body>
+</html>
