@@ -23,9 +23,9 @@ $(function() {
    $('li:has(#filters)').remove();
 
    // 4
-   $('#2').replaceWith('TWO!!');
+   $('li:contains(Two)').replaceWith('TWO!!');
+   
    // 5
-   $(':header').css({
-      'margin-left' : '+=80',
-   }).
+   $(':header').hide()
+               .fadeIn(600);
 });
