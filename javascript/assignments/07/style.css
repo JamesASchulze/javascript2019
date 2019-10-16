@@ -28,10 +28,23 @@ li {
    width: 100px;
 }
 
+ul {
+   margin-top: 35px;
+}
+
 li > span {
    color: red;
 }
 
 .bg-red {
    background-color: red;
+}
+
+.numbers {
+   display: inline;
+}
+
+#showHide {
+   display: inline;
+   margin: 10px;
 }
