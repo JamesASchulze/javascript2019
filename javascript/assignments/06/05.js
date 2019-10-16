@@ -12,12 +12,12 @@ function packHint() {
    console.log(package);
 
    if (package === 'annual') {
-      elPackHint.innerHTML = 'Nice choice, this is the best bang for your buck! (International users, please google the meaning of this American term.'
+      elPackHint.innerHTML = 'Nice choice, this is the best bang for your buck! (International users, please google the meaning of this American term.)'
    } else if (package === 'semi-annual') {
       elPackHint.innerHTML = '';
    } else if (package === 'monthly') {
       elPackHint.innerHTML = 'Not into long-term commitments, huh? ...You would save more $$$ if you purchase the yearly subscription';
-   } else if (package === 'semi-annual') {
+   } else if (package === 'weekly') {
       elPackHint.innerHTML = "You have commitment issues, don't you?";
    }
 }
