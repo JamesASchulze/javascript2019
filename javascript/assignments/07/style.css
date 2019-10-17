@@ -12,6 +12,7 @@ h2 {
    display: block;
    padding: 10px 15px;
    border-radius: 5px;
+   display: inline;
 }
 
 p {
@@ -45,6 +46,6 @@ li > span {
 }
 
 #showHide {
-   display: inline;
-   margin: 10px;
+   /* display: inline; */
+   /* margin: 10px; */
 }
