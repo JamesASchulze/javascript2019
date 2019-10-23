@@ -1,0 +1,46 @@
+h1 {
+   background-color: gray;
+   color: white;
+   display: block;
+   padding: 5px 10px;
+   border-radius: 5px;
+}
+
+h2 {
+   background-color: teal;
+   color: white;
+   display: block;
+   padding: 10px 15px;
+   border-radius: 5px;
+   display: inline;
+}
+
+p {
+   padding: 10px;
+   border-radius: 5px;
+   margin: 10px
+}
+
+li {
+   background-color: teal;
+   color: white;
+   padding: 10px 15px;
+   margin: 10px;
+   width: 100px;
+}
+
+ul {
+   margin-top: 35px;
+}
+
+li > span {
+   color: red;
+}
+
+.bg-red {
+   background-color: red;
+}
+
+.numbers {
+   display: inline;
+}
