@@ -1,31 +1,17 @@
-$(function() {
+$(document).ready(function(){
 
-   var $navList = $('li');
-
-   console.log($navList);
-
-   // Style with css.
-   $navList.css({
-      'display' : 'inline',
+	$('a').each(function(i) {
+		var preview = $('#preview');
+		var final_x = i * -400;
+		$(this).mouseover(function() {
+			preview.animate({
+				"left": final_x
+				},{
+					queue: false,
+					duration: 500,
+					easing: "easeOutBounce"
+				});
+		});
    });
 
-   // jQuery filters
-   // 1
-   $('li:first').css({
-      'background-color' : '#d2691e',
-      'color' : '#bfbfbf',
-   });
-
-   // 2
-   $('li:last').remove();
-
-   // 3
-   $('li:has(#filters)').remove();
-
-   // 4
-   $('li:contains(Two)').replaceWith('TWO!!');
-   
-   // 5
-   $(':header').hide()
-               .fadeIn(600);
 });

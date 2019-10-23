@@ -37,6 +37,19 @@ li > span {
    color: red;
 }
 
+nav ul li {
+   display: inline-block;
+   border-bottom-right-radius: 10px;
+   border-bottom-left-radius: 10px;
+   width: 165px;
+   text-align: center;
+   margin: 5px;
+}
+
+img {
+   width: 400px;
+}
+
 .bg-red {
    background-color: red;
 }
@@ -44,3 +57,4 @@ li > span {
 .numbers {
    display: inline;
 }
+
