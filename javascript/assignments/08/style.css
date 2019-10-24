@@ -15,12 +15,6 @@ h2 {
    display: inline;
 }
 
-p {
-   padding: 10px;
-   border-radius: 5px;
-   margin: 10px
-}
-
 li {
    background-color: teal;
    color: white;
@@ -76,4 +70,28 @@ img {
 	height: 400px;
 	position: relative;
 	overflow: hidden;
+}
+
+footer {
+   margin-top: 50px;
+}
+
+.flex-col {
+   display: flex;
+   flex-direction: column;
+}
+
+.flex-row {
+   display: flex;
+   flex-direction: row;
+   margin-bottom: 5px;
+}
+
+.error {
+   background-color: rgba(253, 253, 0, 0.699);
+}
+
+.error-parent {
+   background: rgba(247, 0, 41, 0.705);
+   padding-bottom: 10px;
 }
