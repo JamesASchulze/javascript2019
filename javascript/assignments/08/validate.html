@@ -34,8 +34,8 @@
                </select>
             </p>
             <hr>
-            <p class="flex-col">
-               Please select your favorite color from the choices below...
+            <div class="flex-col">
+               <p>Please select your favorite color from the choices below...</p>
                <div class="flex-row">
                   <input type="radio" id="color-red" value="red" name="color">
                   <label for="color-red">Red</label>
@@ -48,10 +48,10 @@
                   <input type="radio" id="color-blue" value="blue" name="color">
                   <label for="color-blue">Blue</label>
                </div>
-            </p>
+            </div>
             <hr>
-            <p class="flex-col">
-               Please check at least four (4) of these boxes...
+            <div class="flex-col">
+               <p>Please check at least four (4) of these boxes...</p>
                <div class="flex-row">
                   <input type="checkbox" class="checkbox" id="spam_email" value="email" name="spam[]">
                   <label for="spam_email">Receive Spam by E-Mail</label>
@@ -61,22 +61,22 @@
                   <label for="spam_mail">Receive Spam by Snail-Mail</label>
                </div>
                <div class="flex-row">
-                  <input type="checkbox" class="checkbox" id="spam_email" value="email" name="spam[]">
-                  <label for="spam_email">Receive Spam by Phone Call at Dinner Time</label>
+                  <input type="checkbox" class="checkbox" id="spam_call" value="call" name="spam[]">
+                  <label for="spam_call">Receive Spam by Phone Call at Dinner Time</label>
                </div>
                <div class="flex-row">
-                  <input type="checkbox" class="checkbox" id="spam_email" value="email" name="spam[]">
-                  <label for="spam_email">Receive Spam by Creepy Door-To-Door Salesman</label>
+                  <input type="checkbox" class="checkbox" id="spam_door" value="door" name="spam[]">
+                  <label for="spam_door">Receive Spam by Creepy Door-To-Door Salesman</label>
                </div>
                <div class="flex-row">
-                  <input type="checkbox" class="checkbox" id="spam_email" value="email" name="spam[]">
-                  <label for="spam_email">Receive Spam by Intrusive Google Adds</label>
+                  <input type="checkbox" class="checkbox" id="spam_google" value="google" name="spam[]">
+                  <label for="spam_google">Receive Spam by Intrusive Google Adds</label>
                </div>
                <div class="flex-row">
-                  <input type="checkbox" class="checkbox" id="spam_email" value="email" name="spam[]">
-                  <label for="spam_email">Receive Spam by Annoying &amp; Repetitive Text Messages</label>
+                  <input type="checkbox" class="checkbox" id="spam_text" value="text" name="spam[]">
+                  <label for="spam_text">Receive Spam by Annoying &amp; Repetitive Text Messages</label>
                </div>
-            </p>
+            </div>
             <hr>
             <p class="flex-col">
                   <label for="feedback">What was your favorite part of this form?</label>
@@ -100,11 +100,11 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous">
     </script>
-   <script type="text/javascript">
+   <script>
       window.jQuery || document.write('<script type="text/javascript" src="assets/jquery-3.4.1.min.js"><\/script>')
    </script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
-   <script type="text/javascript">
+   <script>
       if(window.jQuery) {
          window.jQuery.fn.validate || document.write('<script type="text/javascript" src="assets/jquery.validate.min.js"><\/script>')
       }
