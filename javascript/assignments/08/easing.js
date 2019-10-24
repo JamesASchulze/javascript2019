@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	$('a').each(function(i) {
+	$('ol li').each(function(i) {
 		var preview = $('#preview');
 		var final_x = i * -400;
 		$(this).mouseover(function() {

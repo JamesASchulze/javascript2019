@@ -46,6 +46,10 @@ nav ul li {
    margin: 5px;
 }
 
+.inlineImages {
+   display: flex;
+}
+
 img {
    width: 400px;
 }
@@ -58,3 +62,18 @@ img {
    display: inline;
 }
 
+#wrapper {
+   width: 500px;
+   margin: 0 auto;
+}
+
+#preview {
+   position: absolute;
+}
+
+#slideshow {
+	width: 400px;
+	height: 400px;
+	position: relative;
+	overflow: hidden;
+}
