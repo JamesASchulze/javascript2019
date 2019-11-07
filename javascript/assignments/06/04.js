@@ -5,12 +5,6 @@ function checkLogin(e, num) {
    var elNameMsg = document.getElementById('nameFeedback');
    var elPassMsg = document.getElementById('passFeedback');
 
-   var elName = '';
-   var elPass = '';
-
-   // elName = elUsername.value;
-   // elPass = elPassword.value;
-
    // Did we get the element?
    console.log(e);
    console.log(e.textLength);
