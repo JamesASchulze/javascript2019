@@ -1,18 +1,22 @@
 function checkLogin(e, num) {
-// function checkLogin() {
 
    // Get element for mounting feedback.
    var elNameMsg = document.getElementById('nameFeedback');
    var elPassMsg = document.getElementById('passFeedback');
 
+   var elName = '';
+   var elPass = '';
+
+   // elName = elUsername.value;
+   // elPass = elPassword.value;
+
    // Did we get the element?
-   console.log(e);
+   console.log(elNameMsg);
    console.log(e.textLength);
 
    // Check the num length and respond if accordingly.
-   // if (e.textLength < num) {
    if (e.textLength < num) {
-      elNameMsg.textContent = 'The ' + e.id + ' needs to be ' + num + ' characters or longer.';
+      elNameMsg.textContent = 'The ' + type + ' needs to be ' + num + ' characters or longer.';
    } else {
       elNameMsg.textContent = '';
    }
@@ -21,10 +25,12 @@ function checkLogin(e, num) {
 
 // Get username element then call the check login function for basic validation.
 var elUsername = document.getElementById('username');
-console.log(elUsername);
-elUsername.addEventListener("blur", checkLogin(elUsername, 5));
-
+elUsername.addEventListener('blur', function(e) {
+   checkLogin(e, 5)
+}, false);
 
 // Get password element then call the check login function for basic validation.
 var elPassword = document.getElementById('password');
-elPassword.addEventListener('blur', checkLogin(elPassword, 10), false);
+elPassword.addEventListener('blur', function(e){
+   checkLogin(e, 10)
+}, false);

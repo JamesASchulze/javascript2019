@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Assignment 08: Validate</title>
+   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+</head>
+<body>
+   <div id="wrapper">
+      <nav><a href="index.html">Back To The Page List For Assignment 08</a></nav>
+      <h1>Validate the Form</h1>
+      <form novalidate action="//example.com" method="post" id="form">
+         <fieldset>
+            <legend>Login Form</legend>
+            <p class="flex-col">
+               <label for="username">Username</label>
+               <input id="username" type="text" name="username" placeholder="Enter your username here...">
+            </p>
+            <hr>
+            <p class="flex-col">
+               <label for="password">Password</label>
+               <input type="password" name="password" id="password" placeholder="Enter your password here...">
+            </p>
+            <hr>
+            <p class="flex-col">
+               <label for="trilogy">Please select your favorite trilogy</label>
+               <select id="trilogy" name="trilogy" title="I've got a bad feeling about this..">
+                  <option value="">Choose your favorite trilogy...</option>
+                  <option value="sw123">Star Wars: Episodes I, II &amp; III (The fall of Skywalker)</option>
+                  <option value="sw456">Star Wars: Episodes IV, V &amp; VI: (The redemption of Skywalker)</option>
+                  <option value="sw456">Star Wars: Episodes VII, VIII &amp; XI: (The rise of Skywalker)</option>
+                  <option value="lotr">The Lord Of The Rings</option>
+                  <option value="hobbit">The Hobbit</option>
+               </select>
+            </p>
+            <hr>
+            <div class="flex-col">
+               <p>Please select your favorite color from the choices below...</p>
+               <div class="flex-row">
+                  <input type="radio" id="color-red" value="red" name="color">
+                  <label for="color-red">Red</label>
+               </div>
+               <div class="flex-row">
+                  <input type="radio" id="color-green" value="green" name="color">
+                  <label for="color-green">Green</label>
+               </div>
+               <div class="flex-row">
+                  <input type="radio" id="color-blue" value="blue" name="color">
+                  <label for="color-blue">Blue</label>
+               </div>
+            </div>
+            <hr>
+            <div class="flex-col">
+               <p>Please check at least four (4) of these boxes...</p>
+               <div class="flex-row">
+                  <input type="checkbox" class="checkbox" id="spam_email" value="email" name="spam[]">
+                  <label for="spam_email">Receive Spam by E-Mail</label>
+               </div>
+               <div class="flex-row">
+                  <input type="checkbox" class="checkbox" id="spam_mail" value="mail" name="spam[]">
+                  <label for="spam_mail">Receive Spam by Snail-Mail</label>
+               </div>
+               <div class="flex-row">
+                  <input type="checkbox" class="checkbox" id="spam_call" value="call" name="spam[]">
+                  <label for="spam_call">Receive Spam by Phone Call at Dinner Time</label>
+               </div>
+               <div class="flex-row">
+                  <input type="checkbox" class="checkbox" id="spam_door" value="door" name="spam[]">
+                  <label for="spam_door">Receive Spam by Creepy Door-To-Door Salesman</label>
+               </div>
+               <div class="flex-row">
+                  <input type="checkbox" class="checkbox" id="spam_google" value="google" name="spam[]">
+                  <label for="spam_google">Receive Spam by Intrusive Google Adds</label>
+               </div>
+               <div class="flex-row">
+                  <input type="checkbox" class="checkbox" id="spam_text" value="text" name="spam[]">
+                  <label for="spam_text">Receive Spam by Annoying &amp; Repetitive Text Messages</label>
+               </div>
+            </div>
+            <hr>
+            <p class="flex-col">
+                  <label for="feedback">What was your favorite part of this form?</label>
+                  <textarea id="feedback" name="feedback" rows="3" cols="33"></textarea>
+             </p>
+             <hr>
+             <p>
+                 <input class="submit" type="submit" value="Send It!">
+             </p>
+         </fieldset>
+      </form>
+      <footer>
+         <a href="../../index.html">&copy; 2019 James A. Schulze</a>
+         <a href="https://validator.w3.org/check?uri=referer">HTML</a>
+         <a href="https://jigsaw.w3.org/css-validator/check/referer/">CSS</a>
+      </footer>
+   </div>
+
+   <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous">
+    </script>
+   <script>
+      window.jQuery || document.write('<script type="text/javascript" src="assets/jquery-3.4.1.min.js"><\/script>')
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+   <script>
+      if(window.jQuery) {
+         window.jQuery.fn.validate || document.write('<script type="text/javascript" src="assets/jquery.validate.min.js"><\/script>')
+      }
+   </script>
+   <script src="scripts/validate.js"></script>
+</body>
+</html>
