@@ -110,6 +110,17 @@ img {
    display: flex;
 }
 
+#codeLang {
+   width: 50%;
+}
+
+.cal-date {
+   height: 250px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
 footer {
    margin-top: 50px;
    display: flex;
@@ -139,4 +150,25 @@ footer a {
 .error-parent {
    background: rgba(247, 0, 41, 0.705);
    padding-bottom: 10px;
+}
+
+.form-user-info {
+   width: 100%;
+}
+
+/* .form-user-info p {
+   margin: 15px;
+} */
+
+.no-js nav:after {
+   content: "Javascript is turned off, please allow Javascript to run otherwise this page will not display correctly."
+}
+
+.wrap-it {
+   flex-wrap: wrap;
+}
+
+.flex-row input,
+.flex-row label {
+   margin: 0 7px;
 }

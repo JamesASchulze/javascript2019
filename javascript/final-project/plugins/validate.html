@@ -1,91 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
    <meta charset="UTF-8">
-   <title>Assignment 08: Validate</title>
-   <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+   <title>Final Project: Validation Plugin</title>
+   <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
 </head>
 <body>
    <div id="wrapper">
-      <nav><a href="index.html">Back To The Page List For Assignment 08</a></nav>
+      <nav><a href="../index.html">⬅️ Back</a></nav>
       <h1>Validate the Form</h1>
       <form novalidate action="//example.com" method="post" id="form">
          <fieldset>
             <legend>Login Form</legend>
-            <p class="flex-col">
-               <label for="username">Username</label>
-               <input id="username" type="text" name="username" placeholder="Enter your username here...">
-            </p>
+            <div class="flex-row form-user-info">
+               <p class="flex-col form-user-info wrap-it">
+                  <label for="userEmail">Email</label>
+                  <input id="userEmail" type="text" name="userEmail" placeholder="Enter your email address here...">
+               </p>
+               <p class="flex-col form-user-info wrap-it">
+                  <label for="password">Password</label>
+                  <input type="password" name="password" id="password" placeholder="Enter your password here...">
+               </p>
+            </div>
+            <div class="flex-row form-user-info">
+               <p class="flex-col form-user-info wrap-it">
+                  <label for="dinosaur">Dinosaur</label>
+                  <input id="dinosaur" type="text" name="dinosaur" placeholder="Enter your favorite dinosaur here...">
+               </p>
+               <p class="flex-col form-user-info wrap-it">
+                  <label for="cPassword">Confirm Password</label>
+                  <input type="cPassword" name="cPassword" id="cPassword" placeholder="Please confirm your password here...">
+               </p>
+            </div>
+            <hr>
+            <div class="flex-col">
+               <p>Would you rather???</p>
+                  <div class="flex-row">
+                     <input type="radio" id="choice-1" value="car" name="choice">
+                     <label for="choice-1">Have a Lamborgini</label>
+                  </div>
+                  <div class="flex-row">
+                     <input type="radio" id="choice-2" value="dough" name="choice">
+                     <label for="choice-2">Have a $1,000,000</label>
+                  </div>
+                  <div class="flex-row">
+                     <input type="radio" id="choice-3" value="debt-free" name="choice">
+                     <label for="choice-3">Be debt free for the rest of your life</label>
+                  </div>
+            </div>
             <hr>
             <p class="flex-col">
-               <label for="password">Password</label>
-               <input type="password" name="password" id="password" placeholder="Enter your password here...">
-            </p>
-            <hr>
-            <p class="flex-col">
-               <label for="trilogy">Please select your favorite trilogy</label>
-               <select id="trilogy" name="trilogy" title="I've got a bad feeling about this..">
-                  <option value="">Choose your favorite trilogy...</option>
-                  <option value="sw123">Star Wars: Episodes I, II &amp; III (The fall of Skywalker)</option>
-                  <option value="sw456">Star Wars: Episodes IV, V &amp; VI: (The redemption of Skywalker)</option>
-                  <option value="sw456">Star Wars: Episodes VII, VIII &amp; XI: (The rise of Skywalker)</option>
-                  <option value="lotr">The Lord Of The Rings</option>
-                  <option value="hobbit">The Hobbit</option>
+               <label for="codeLang">Please select your favorite programing language</label>
+               <select id="codeLang" name="codeLang" title="Choose a program language">
+                  <option value="">Choose wisely...</option>
+                  <option value="javascript">JavaScript</option>
+                  <option value="php">PHP</option>
+                  <option value="cSharp">C#</option>
                </select>
             </p>
             <hr>
             <div class="flex-col">
-               <p>Please select your favorite color from the choices below...</p>
+               <p>Please check at least two (2) of your favorite Star Wars movies...</p>
                <div class="flex-row">
-                  <input type="radio" id="color-red" value="red" name="color">
-                  <label for="color-red">Red</label>
+                  <input type="checkbox" class="checkbox" id="sw1" value="episode I" name="sw[]">
+                  <label for="spam_email">The Phantom Menace</label>
                </div>
                <div class="flex-row">
-                  <input type="radio" id="color-green" value="green" name="color">
-                  <label for="color-green">Green</label>
+                  <input type="checkbox" class="checkbox" id="sw2" value="episode II" name="sw[]">
+                  <label for="spam_mail">Attack of the Clones</label>
                </div>
                <div class="flex-row">
-                  <input type="radio" id="color-blue" value="blue" name="color">
-                  <label for="color-blue">Blue</label>
-               </div>
-            </div>
-            <hr>
-            <div class="flex-col">
-               <p>Please check at least four (4) of these boxes...</p>
-               <div class="flex-row">
-                  <input type="checkbox" class="checkbox" id="spam_email" value="email" name="spam[]">
-                  <label for="spam_email">Receive Spam by E-Mail</label>
+                  <input type="checkbox" class="checkbox" id="sw3" value="episode III" name="sw[]">
+                  <label for="spam_call">The Revenge of the Sith</label>
                </div>
                <div class="flex-row">
-                  <input type="checkbox" class="checkbox" id="spam_mail" value="mail" name="spam[]">
-                  <label for="spam_mail">Receive Spam by Snail-Mail</label>
+                  <input type="checkbox" class="checkbox" id="sw4" value="episode IV" name="sw[]">
+                  <label for="spam_door">A New Hope</label>
                </div>
                <div class="flex-row">
-                  <input type="checkbox" class="checkbox" id="spam_call" value="call" name="spam[]">
-                  <label for="spam_call">Receive Spam by Phone Call at Dinner Time</label>
+                  <input type="checkbox" class="checkbox" id="sw5" value="episode V" name="sw[]">
+                  <label for="spam_google">The Empire Strikes Back</label>
                </div>
                <div class="flex-row">
-                  <input type="checkbox" class="checkbox" id="spam_door" value="door" name="spam[]">
-                  <label for="spam_door">Receive Spam by Creepy Door-To-Door Salesman</label>
-               </div>
-               <div class="flex-row">
-                  <input type="checkbox" class="checkbox" id="spam_google" value="google" name="spam[]">
-                  <label for="spam_google">Receive Spam by Intrusive Google Adds</label>
-               </div>
-               <div class="flex-row">
-                  <input type="checkbox" class="checkbox" id="spam_text" value="text" name="spam[]">
-                  <label for="spam_text">Receive Spam by Annoying &amp; Repetitive Text Messages</label>
+                  <input type="checkbox" class="checkbox" id="sw6" value="episode VI" name="sw[]">
+                  <label for="spam_text">The Return of the Jedi</label>
                </div>
             </div>
             <hr>
             <p class="flex-col">
-                  <label for="feedback">What was your favorite part of this form?</label>
-                  <textarea id="feedback" name="feedback" rows="3" cols="33"></textarea>
-             </p>
-             <hr>
-             <p>
-                 <input class="submit" type="submit" value="Send It!">
-             </p>
+               <label for="why">Please write a short essay on "Why"</label>
+               <textarea id="why" name="why" rows="3" cols="33"></textarea>
+            </p>
+            <hr>
+            <p>
+               <input class="submit" type="submit" value="Send It!">
+            </p>
          </fieldset>
       </form>
       <footer>
@@ -101,12 +110,12 @@
         crossorigin="anonymous">
     </script>
    <script>
-      window.jQuery || document.write('<script type="text/javascript" src="assets/jquery-3.4.1.min.js"><\/script>')
+      window.jQuery || document.write('<script type="text/javascript" src="../assets/jquery-3.4.1.min.js"><\/script>')
    </script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
    <script>
       if(window.jQuery) {
-         window.jQuery.fn.validate || document.write('<script type="text/javascript" src="assets/jquery.validate.min.js"><\/script>')
+         window.jQuery.fn.validate || document.write('<script type="text/javascript" src="../assets/jquery.validate.min.js"><\/script>')
       }
    </script>
    <script src="scripts/validate.js"></script>

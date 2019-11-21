@@ -14,51 +14,65 @@ $(function() {
           });
       },
       rules: {
-         username: {
+         userEmail: {
             required: true,
-            minlength: 5,
-            maxlength: 20,
+            email: true,
          },
          password: {
             required: true,
             minlength: 6,
          },
-         trilogy: {
-            required: true,
-         },
-         color: {
-            required: true,
-         },
-         'spam[]': {
+         dinosaur: {
             required: true,
             minlength: 4,
          },
-         feedback: {
+         cPassword: {
+            required: true,
+            equalTo: "#password",
+         },
+         choice: {
+            required: true,
+         },
+         codeLang: {
+            required: true,
+         },
+         'sw[]': {
+            required: true,
+            minlength: 2,
+         },
+         why: {
             required: true,
          }
       },
       messages: {
          username: {
-            required: "Please enter a username",
-            minlength: "Your username must consist of at least 5 characters",
-            maxlength: "Your username must consist of less than 20 characters"
+            required: "Please enter a valid email",
+            email: "Please enter a valid email"
          },
          password: {
             required: "Please provide a password",
             minlength: "Your password must be at least 6 characters long"
          },
-         trilogy: {
-            required: "Please select your favorite movie trilogy.",
+         dinosaur: {
+            required: "Please tell us what your favorite dinosaur is",
+            minlength: "No dinosaur has a name shorter than 4 letters... I just made that up, but it's my rule!"
          },
-         color: {
-            required: "Please pick a color",
+         cPassword: {
+            required: "Please confirm your password",
+            equalTo: "This didn't match, please confirm your password"
          },
-         'spam[]': {
-            required: "Please choose at least 4 options for us to spam you.",
-            minlength: "If you want to finish this form and get what we got, you must choose at least 4 ways for us to spam you.",
+         choice: {
+            required: "Please select which one you would rather have.",
          },
-         feedback: {
-            required: "You must tell us what you like about this form.",
+         codeLang: {
+            required: "Please select a language",
+         },
+         'sw[]': {
+            required: "Please choose at least 2 of the movies",
+            minlength: "Please choose at least 2 of the movies",
+         },
+         why: {
+            required: "Please write a short essay on \"Why\" for us",
          }
       },
 

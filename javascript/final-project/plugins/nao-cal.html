@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+   <meta charset="UTF-8">
+   <title>Final Project: Nao Calendar Plugin</title>
+   <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
+	<link rel="stylesheet" href="../assets/nao-calendar/aicon/style.css">
+	<link rel="stylesheet" href="../assets/nao-calendar/css/jquery-pseudo-ripple.css">
+	<link rel="stylesheet" href="../assets/nao-calendar/css/jquery-nao-calendar.css">
+</head>
+<body>
+   <div id="wrapper">
+      <nav><a href="../index.html">⬅️ Back</a></nav>
+      <h1>Nao Calendar</h1>
+      <div class="col sml-1 mid-1 lrg-2">
+         <h3>Dependencies</h3>
+         <ul class="flex-row">
+            <li>jQuery</li>
+            <li>jQuery Pseudo Ripple</li>
+            <li>Aicon icon set</li>
+         </ul>
+      </div>
+      <div id="date-display" class="cal-date"></div>
+      <div class="calendar-1"></div>
+      <footer>
+         <a href="../../index.html">&copy; 2019 James A. Schulze</a>
+         <a href="https://validator.w3.org/check?uri=referer">HTML</a>
+         <a href="https://jigsaw.w3.org/css-validator/check/referer/">CSS</a>
+      </footer>
+   </div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js" integrity="sha256-wNQJi8izTG+Ho9dyOYiugSFKU6C7Sh1NNqZ2QPmO0Hk=" crossorigin="anonymous"></script>
+   <script>
+      window.jQuery || document.write('<script type="text/javascript" src="../assets/jquery-2.1.1.min.js"><\/script>')
+   </script>
+   <!-- There is not a version of this plug in on any CDN, at least that I could find.
+   So I made up this CDN link to test if the code would insert the backup script tag. -->
+   <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/nao-calendar/1.4.1/jquery.jquery-nao-calendar.min.js"
+      integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4552Ybx/y1RM7rMmAesA0k="
+      crossorigin="anonymous">
+   </script>
+   <script src="../assets/nao-calendar/jquery-pseudo-ripple.js"></script>
+   <script>
+         if(window.jQuery){
+            document.write('<script type="text/javascript" src="../assets/nao-calendar/jquery-nao-calendar.js""><\/script>')
+         }
+      </script>
+   <script src="scripts/nao-cal.js"></script>
+</body>
+</html>
