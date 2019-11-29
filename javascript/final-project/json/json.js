@@ -12,7 +12,9 @@ $(function() {
 
          // Create and build a string to hold the new content.
          var newContent = '';
-         for (var i = 0; i < responseObject.puppies.length; i++) { // Loop through object
+
+         // Loop through the json and build the new content
+         for (var i = 0; i < responseObject.puppies.length; i++) {
             newContent += '<div class="inlineImages">';
             newContent += '<img src="' + responseObject.puppies[i].img + '" ';
             newContent += 'alt="Puppy' + responseObject.puppies[i].name + '" />';
@@ -21,7 +23,7 @@ $(function() {
             newContent += '</div>';
          }
 
-         // Update the page content
+         // Update the page with the new content
          document.getElementById('content').innerHTML = newContent;
 
       }

@@ -27,6 +27,10 @@ li {
    width: 110px;
 }
 
+li a {
+   color: white;
+}
+
 ul {
    margin-top: 35px;
 }
@@ -156,11 +160,7 @@ footer a {
    width: 100%;
 }
 
-/* .form-user-info p {
-   margin: 15px;
-} */
-
-.no-js nav:after {
+.no-js div#err-msg:after {
    content: "Javascript is turned off, please allow Javascript to run otherwise this page will not display correctly."
 }
 
@@ -171,4 +171,21 @@ footer a {
 .flex-row input,
 .flex-row label {
    margin: 0 7px;
+}
+
+.space-around {
+   justify-content: space-around;
+}
+
+.qr {
+   height:300px;
+}
+
+#bgswitcher {
+   height: 600px;
+}
+
+#bgswitcher div:first-child {
+   background-repeat: no-repeat;
+   height: 600px;
 }

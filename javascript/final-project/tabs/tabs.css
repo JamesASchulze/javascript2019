@@ -1,0 +1,46 @@
+.tab-list li.active, .tab-list li.hover {
+   background-color: gray;
+   border-bottom: 3px solid gray;
+}
+
+ .tab-list li.active a, .tab-list li a:hover {
+   color: white;
+   background-color: gray;
+}
+
+ .tab-panel {
+   display: none;
+   background-color: gray;
+   color: white;
+   min-height: 150px;
+   overflow: auto;
+}
+
+ .tab-panel.active {
+   display: block;
+}
+
+ .tab-panel p {
+   margin: 20px;
+}
+
+.flex-row {
+   margin-bottom: 0;
+}
+
+img {
+   width: unset;
+}
+
+li {
+   width: 120px;
+   padding: 5px 20px;
+}
+
+#tabs-ul {
+   margin: 35px 0 -10px -50px;
+}
+
+#tabs-ul a {
+   color: white;
+}

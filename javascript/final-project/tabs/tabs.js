@@ -1,7 +1,7 @@
 $(function() {
 
-   // Fade in the Links.
-   $('li').hide().fadeIn(1000);
+   // Use the new plugin!
+   $('.tab-list').tabs();
 
    // Console group name and jQuery version.
    console.group();

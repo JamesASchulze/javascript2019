@@ -1,7 +1,13 @@
 $(function() {
 
-   // Fade in the Links.
-   $('li').hide().fadeIn(1000);
+   $('#fullpage').fullpage({
+		//options here
+		autoScrolling:true,
+		scrollHorizontally: true
+	});
+
+	//methods
+	$.fn.fullpage.setAllowScrolling(false);
 
    // Console group name and jQuery version.
    console.group();

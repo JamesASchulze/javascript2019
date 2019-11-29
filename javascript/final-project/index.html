@@ -1,32 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 <head>
     <meta charset="utf-8" />
     <title>JavaScript ~ Final Project</title>
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
 </head>
-<body>
+<body id="wrapper">
+    <div id="err-msg"></div>
     <header>
         <h1>JavaScript ~ Final Project</h1>
     </header>
     <h2>Documentation Page</h2>
-    <ul>
+    <ul class="flex-row wrap-it space-around">
         <li><a href="plugins/validate.html">Plugin 1: Validator</a></li>
-        <li><a href="plugins/nao-cal.html">Plugin 2: Pretty Responsive Calendar In jQuery - Nao Calendar</a></li>
-        <li><a href="plugins/">Plugin 3: </a></li>
-        <li><a href="plugins/">Plugin 4: </a></li>
-        <li><a href="plugins/">Plugin 5: </a></li>
+        <li><a href="plugins/nao-cal.html">Plugin 2: Nao Calendar</a></li>
+        <li><a href="plugins/qrcode.html">Plugin 3: QR Code Generator</a></li>
+        <li><a href="plugins/fullpage.html">Plugin 4: fullPage.js</a></li>
+        <li><a href="plugins/bgswitcher.html">Plugin 5: BgSwitcher</a></li>
         <li><a href="tabs/index.html">Tabs</a></li>
         <li><a href="json/index.html">JSON</a></li>
         <li><a href="ajax/index.html">AJAX</a></li>
         <li><a href="map/google-map.html">Google Map</a></li>
     </ul>
+    <h2>Plugin Description &amp; Links</h2>
+    <div class="flex-row wrap-it space-around">
+        <div class="flex-col">
+            <h3>Validator</h3>
+            <p>Description</p>
+            <a href="https://jqueryvalidation.org/">jqueryvalidation.org</a>
+        </div>
+        <div class="flex-col">
+            <h3>Nao Calendar</h3>
+            <p>Description</p>
+            <a href="https://github.com/Naeemur/jquery-nao-calendar">github.com/Naeemur/jquery-nao-calendar</a>
+        </div>
+        <div class="flex-col">
+            <h3>QR Code Generator</h3>
+            <p>Description</p>
+            <a href="https://jeromeetienne.github.io/jquery-qrcode/">jeromeetienne.github.io/jquery-qrcode</a>
+        </div>
+        <div class="flex-col">
+            <h3>fullPage.js</h3>
+            <p>Description</p>
+            <a href="https://alvarotrigo.com/fullPage/">alvarotrigo.com/fullPage</a>
+        </div>
+        <div class="flex-col">
+            <h3>BgSwitcher</h3>
+            <p>Description</p>
+            <a href="https://rewish.github.io/jquery-bgswitcher/">rewish.github.io/jquery-bgswitcher</a>
+        </div>
+    </div>
 
     <footer>
         <a href="../../index.html">&copy; 2019 James A. Schulze</a>
         <a href="https://validator.w3.org/check?uri=referer">HTML</a>
         <a href="https://jigsaw.w3.org/css-validator/check/referer/">CSS</a>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
     <script
         src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="

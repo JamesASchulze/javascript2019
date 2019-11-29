@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+   <meta charset="UTF-8">
+   <title>Final Project: Validation Plugin</title>
+   <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
+</head>
+<body>
+   <div id="wrapper">
+      <div id="err-msg"></div>
+      <nav><a href="../index.html">⬅️ Back</a></nav>
+      <h1>jQuery QR Code Generator</h1>
+      <!-- <div id="content"> -->
+      <div class="flex-row wrap-it space-around">
+         <div class="flex-col">
+            <h4>This plugin is really cool!</h4>
+            <div id="qrcode" class="qr"></div>
+         </div>
+         <div class="flex-col">
+            <h4>JamesSchulze.com</h4>
+            <div id="js-qrcode" class="qr"></div>
+         </div>
+         <div class="flex-col">
+            <h4>The Atheist Delusion Movie</h4>
+            <div id="delusion" class="qr"></div>
+         </div>
+         <div class="flex-col">
+            <h4>jschulze.bitweb1.nwtc.edu</h4>
+            <div id="nwtc" class="qr"></div>
+         </div>
+      </div>
+      <footer>
+         <a href="../../index.html">&copy; 2019 James A. Schulze</a>
+         <a href="https://validator.w3.org/check?uri=referer">HTML</a>
+         <a href="https://jigsaw.w3.org/css-validator/check/referer/">CSS</a>
+      </footer>
+   </div>
+   <script
+   src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+   crossorigin="anonymous">
+    </script>
+   <script>
+      window.jQuery || document.write('<script type="text/javascript" src="../assets/jquery-3.4.1.min.js"><\/script>')
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js" integrity="sha256-9MzwK2kJKBmsJFdccXoIDDtsbWFh8bjYK/C7UjB1Ay0=" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
+   <script src="scripts/qrcode.js"></script>
+</body>
+</html>

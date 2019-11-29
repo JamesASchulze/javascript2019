@@ -1,19 +1,19 @@
 {
    "puppies" : [
       {
-         "name" : " Elmer",
+         "name" : " Mozart",
          "age" : " 8 weeks</p>",
-         "img" : "images/pup1.jpg"
+         "img" : "../images/pup1.jpg"
       },
       {
-         "name" : " Midnight",
-         "age" : " 3 months",
-         "img" : "images/pup2.jpg"
+         "name" : " Dove",
+         "age" : " 8 months",
+         "img" : "../images/pup2.jpg"
       },
       {
-         "name" : " Bosly",
-         "age" : " 8 weeks",
-         "img" : "images/pup3.jpg"
+         "name" : " Dandy",
+         "age" : " 1 year",
+         "img" : "../images/pup3.jpg"
       }
    ]
 }

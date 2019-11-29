@@ -1,7 +1,11 @@
 $(function() {
 
-   // Fade in the Links.
-   $('li').hide().fadeIn(1000);
+   $(".box").bgswitcher({
+      images: ["../images/pup1.jpg", "../images/pup2.jpg", "../images/pup3.jpg"],
+      interval: 4000,
+      effect: "blind",
+      repeat: "none",
+    });
 
    // Console group name and jQuery version.
    console.group();
