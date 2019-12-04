@@ -15,10 +15,6 @@ h2 {
    display: inline;
 }
 
-#jquery-load-nav ul li a {
-   color: aliceblue;
-}
-
 li {
    background-color: teal;
    color: white;
@@ -76,10 +72,6 @@ nav ul li {
    width: 410px;
 }
 
-img {
-   width: 400px;
-}
-
 .bg-red {
    background-color: red;
 }
@@ -125,17 +117,6 @@ img {
    justify-content: space-around;
 }
 
-footer {
-   margin-top: 50px;
-   display: flex;
-   justify-content: center;
-}
-
-footer a {
-   margin-left:5px;
-   margin-right: 5px;
-}
-
 .flex-col {
    display: flex;
    flex-direction: column;
@@ -179,13 +160,4 @@ footer a {
 
 .qr {
    height:300px;
-}
-
-#bgswitcher {
-   height: 600px;
-}
-
-#bgswitcher div:first-child {
-   background-repeat: no-repeat;
-   height: 600px;
 }
