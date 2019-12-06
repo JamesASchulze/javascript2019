@@ -1,281 +1,102 @@
-var skywalkerMap;
-function init() {
+$(function() {
 
-	// Location where the pin is set.
-	var pinLoc = new google.maps.LatLng(38.063549,-122.648857);
+	// function mapInit() {
 
-	// Map options
-	var mapOptions = {
-		zoom: 15,
-		center: pinLoc,
-		mapTypeId: google.maps.MapTypeId.ROADMAP,
-		panControl: false,
-		zoomControl: true,
-		zoomControlOptions: {
-		  style: google.maps.ZoomControlStyle.SMALL,
-		  position: google.maps.ControlPosition.TOP_RIGHT
-		},
+		// Get the map element to attach the map to
+		var $elMap = $('#map');
 
-		styles: [
-			{
-			  "elementType": "labels",
-			  "stylers": [
-				 {
-					"visibility": "off"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "administrative",
-			  "elementType": "geometry",
-			  "stylers": [
-				 {
-					"visibility": "off"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "administrative",
-			  "elementType": "labels",
-			  "stylers": [
-				 {
-					"visibility": "off"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "administrative.country",
-			  "stylers": [
-				 {
-					"visibility": "on"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "administrative.province",
-			  "elementType": "labels.text",
-			  "stylers": [
-				 {
-					"visibility": "on"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "landscape",
-			  "stylers": [
-				 {
-					"color": "#585858"
-				 },
-				 {
-					"visibility": "on"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "landscape",
-			  "elementType": "labels",
-			  "stylers": [
-				 {
-					"visibility": "off"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "poi.attraction",
-			  "elementType": "geometry",
-			  "stylers": [
-				 {
-					"color": "#ffffff"
-				 },
-				 {
-					"visibility": "on"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "poi.business",
-			  "elementType": "geometry",
-			  "stylers": [
-				 {
-					"visibility": "off"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "poi.government",
-			  "elementType": "geometry",
-			  "stylers": [
-				 {
-					"visibility": "off"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "poi.medical",
-			  "elementType": "geometry",
-			  "stylers": [
-				 {
-					"visibility": "off"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "poi.park",
-			  "elementType": "geometry",
-			  "stylers": [
-				 {
-					"color": "#ffffff"
-				 },
-				 {
-					"visibility": "on"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "poi.park",
-			  "elementType": "geometry.stroke",
-			  "stylers": [
-				 {
-					"weight": "1.76"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "poi.park",
-			  "elementType": "labels",
-			  "stylers": [
-				 {
-					"visibility": "off"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "poi.place_of_worship",
-			  "elementType": "geometry",
-			  "stylers": [
-				 {
-					"visibility": "off"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "poi.school",
-			  "elementType": "geometry",
-			  "stylers": [
-				 {
-					"visibility": "off"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "poi.sports_complex",
-			  "elementType": "geometry",
-			  "stylers": [
-				 {
-					"visibility": "off"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "road",
-			  "stylers": [
-				 {
-					"visibility": "on"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "road",
-			  "elementType": "geometry",
-			  "stylers": [
-				 {
-					"color": "#ffffff"
-				 },
-				 {
-					"weight": "1.46"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "road",
-			  "elementType": "labels",
-			  "stylers": [
-				 {
-					"visibility": "off"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "road.arterial",
-			  "elementType": "geometry",
-			  "stylers": [
-				 {
-					"weight": "0.61"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "road.highway",
-			  "elementType": "geometry.stroke",
-			  "stylers": [
-				 {
-					"weight": "1.12"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "road.highway.controlled_access",
-			  "elementType": "geometry.fill",
-			  "stylers": [
-				 {
-					"visibility": "on"
-				 },
-				 {
-					"weight": 3
-				 }
-			  ]
-			},
-			{
-			  "featureType": "transit",
-			  "elementType": "geometry",
-			  "stylers": [
-				 {
-					"visibility": "off"
-				 }
-			  ]
-			},
-			{
-			  "featureType": "water",
-			  "elementType": "geometry",
-			  "stylers": [
-				 {
-					"color": "#00a8b3"
-				 },
-				 {
-					"visibility": "simplified"
-				 }
-			  ]
+		// Location unavailable message.
+		var msg = 'Unfortunately, we were not able to get your location.';
+
+
+		// If don't got the location.
+		function fail(msg) {
+
+			// Deliver the "location is unavailable" message.
+			$elMap.textContent = msg;
+
+			// Console log the error.
+			console.log(msg.code);
+		}
+
+
+		// If got the location build a success message with the coords and also the google map.
+		function success(position) {
+
+			// Success message
+			msg = '<h3>Longitude:<br>';
+			msg += position.coords.longitude + '</h3>';
+			msg += '<h3>Latitude:<br>';
+			msg += position.coords.latitude + '</h3>';
+
+			// Deliver the success message
+			$elMap.innerHTML = msg;
+
+			// Function to build the map.
+			function buildMap(latitude, longitude, mountingElemnt) {
+
+				// Build the map
+				var map = new google.maps.Map(mountingElemnt, {
+					center: {
+						lat: latitude,
+						lng: longitude,
+					},
+					mapTypeId: google.maps.MapTypeId.SATELLITE,
+					zoom: 20,
+				});
+
+				// Build the marker
+				var marker = new google.maps.Marker({
+					position: {
+						lat: latitude,
+						lng: longitude,
+					},
+					map: map,
+					animation: google.maps.Animation.BOUNCE,
+					icon: "stormtrooper.png",
+				});
+
+				// Build the info window
+				var infowindow = new google.maps.InfoWindow({
+					content: "You around here..."
+				});
+
+				// Open the map.
+				infowindow.open(map, marker);
 			}
-		]
+
+			// Build the google map
+			buildMap(position.coords.latitude, position.coords.longitude, $elMap);
+		}
+
+
+		// Check to see if geolocation is supported
+		if (Modernizr.geolocation) {
+
+			// Ask for users location
+			navigator.geolocation.getCurrentPosition(success, fail);
+
+			// Tell the user the location is being verified.
+			$elMap.innerHTML = '<h2>Verifying location</h2>';
+		} else {
+
+			// If geolocation is not supported, deliver the location is unavailable message.
+			$elMap.textContent = msg;
+		}
+
+		// }
+
+
+
+
+	// Mount the script to the DOM.
+	function loadScript() {
+		var script = document.createElement('script');
+		// script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDrq6itjJPber61m46hdD6xu_fwZ5zvnrQ&callback=mapInit';
+		script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDrq6itjJPber61m46hdD6xu_fwZ5zvnrQ';
+		document.body.appendChild(script);
 	}
 
-	// Prepare to mount the map to the DOM.
-	var skywalkerMap = new google.maps.Map(document.getElementById('map'), mapOptions);
-
-	// Prepare the marker.
-	var startPos = new google.maps.Marker({
-		position: pinLoc,
-		map: skywalkerMap,
-		icon: "images/rebel.png"
-	});
-
-}
-
-// Mount the script to the DOM.
-function loadScript() {
-	var script = document.createElement('script');
-	script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyDrq6itjJPber61m46hdD6xu_fwZ5zvnrQ&callback=init';
-	document.body.appendChild(script);
-}
-
-window.onload = loadScript;
+	// Mount the script tag to the dom when the window is loading.
+	window.onload = loadScript();
+});

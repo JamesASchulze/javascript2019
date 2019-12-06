@@ -1,18 +1,17 @@
-$(document).ready(function(){
+$(function() {
 
-	// Create XMLHttpRequest object
-	var xhr = new XMLHttpRequest();
+	// Remove old then add the new content
+	function updateContent(url){
+		$('#container').remove();
+		$('#content').load(url + ' #container').hide().fadeIn('700');
+	}
 
-	// When response has loaded
-	xhr.onload = function() {
-		// If server status was ok
-		if(xhr.status === 200) {
-			document.getElementById('content').innerHTML = xhr.responseText; // Update
-		}
-	};
+	// Get the link as $ object
+	var $this = $(this);
 
-	// Prepare the request
-	xhr.open('GET', 'ajax-data.html', true);
-	xhr.send();
+	// Remove and add current page indicator
+	$('a').removeClass('current');
+	$this.addClass('current');
+	updateContent("ajax-data.html");
 
-});
+ });

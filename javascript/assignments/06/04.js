@@ -4,21 +4,22 @@ function checkLogin(e, num) {
    var elNameMsg = document.getElementById('nameFeedback');
    var elPassMsg = document.getElementById('passFeedback');
 
-   var elName = '';
-   var elPass = '';
+   // Get the value and length of the text in the input.
+   console.log(e.target.value);
+   var valLength = e.target.value.length;
 
-   // elName = elUsername.value;
-   // elPass = elPassword.value;
-
-   // Did we get the element?
-   console.log(elNameMsg);
-   console.log(e.textLength);
-
-   // Check the num length and respond if accordingly.
-   if (e.textLength < num) {
-      elNameMsg.textContent = 'The ' + type + ' needs to be ' + num + ' characters or longer.';
+   // Check the num length of the username and respond if accordingly.
+   if (valLength < num) {
+      elNameMsg.textContent = 'The username needs to be ' + num + ' characters or longer.';
    } else {
       elNameMsg.textContent = '';
+   }
+
+   // Check the num length of the password and respond if accordingly.
+   if (valLength < num) {
+      elPassMsg.textContent = 'The password needs to be ' + num + ' characters or longer.';
+   } else {
+      elPassMsg.textContent = '';
    }
 
 }

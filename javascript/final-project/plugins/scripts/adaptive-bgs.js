@@ -1,13 +1,6 @@
 $(function() {
 
-   $('#fullpage').fullpage({
-		//options here
-		autoScrolling:true,
-		scrollHorizontally: true
-	});
-
-	//methods
-	$.fn.fullpage.setAllowScrolling(false);
+   $.adaptiveBackground.run();
 
    // Console group name and jQuery version.
    console.group();

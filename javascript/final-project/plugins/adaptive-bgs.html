@@ -2,27 +2,24 @@
 <html lang="en" class="no-js">
 <head>
    <meta charset="UTF-8">
-   <title>Final Project: Validation Plugin 4 ~ fullPage.js</title>
+   <title>Final Project: Validation Plugin 4 ~ Adaptive Backgrounds</title>
    <link rel="stylesheet" type="text/css" media="screen" href="../style.css" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.css" integrity="sha256-3IkGqGYOvq1Ype2MXFwVJFeBtBACgiveho3SacOEEP8=" crossorigin="anonymous" />
 </head>
 <body>
    <div>
       <div id="err-msg"></div>
       <nav><a href="../index.html">⬅️ Back</a></nav>
-      <h1>fullPage.js</h1>
-      <div id="fullpage">
-         <div class="section">Some section 1</div>
-         <div class="section">
-            <div class="section">
-               <div class="slide">Some section 2: Slide 1 </div>
-               <div class="slide">Some section 2: Slide 2 </div>
-               <div class="slide">Some section 2: Slide 3 </div>
-               <div class="slide">Some section 2: Slide 4 </div>
-            </div>
+      <h1>Adaptive Backgrounds</h1>
+      <div class="flex-col">
+         <div class="puppy-img flex-row space-around">
+            <img src="../images/pup1.jpg" alt="Puppy 1" data-adaptive-background>
          </div>
-         <div class="section">Some section 3</div>
-         <div class="section">Some section 4</div>
+         <div class="puppy-img flex-row space-around">
+            <img src="../images/pup2.jpg" alt="Puppy 2" data-adaptive-background>
+         </div>
+         <div class="puppy-img flex-row space-around">
+            <img src="../images/pup3.jpg" alt="Puppy 3" data-adaptive-background>
+         </div>
       </div>
       <footer>
          <a href="../../index.html">&copy; 2019 James A. Schulze</a>
@@ -38,8 +35,8 @@
    <script>
       window.jQuery || document.write('<script type="text/javascript" src="../assets/jquery-3.4.1.min.js"><\/script>')
    </script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.7/fullpage.min.js" integrity="sha256-e13jRNqOX98m6UAwI/yZTpcDseJtA8s86yfFs4Sqrv8=" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.adaptive-backgrounds/1.0.3/jquery.adaptive-backgrounds.min.js" integrity="sha256-gQDPvlsvfVjsK6EszU5HR45IYoTdwcrwFExg7VihG0g=" crossorigin="anonymous"></script>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous"></script>
-   <script src="scripts/fullpage.js"></script>
+   <script src="scripts/adaptive-bgs.js"></script>
 </body>
 </html>

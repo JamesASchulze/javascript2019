@@ -1,5 +1,5 @@
 // Get the elements.
-var elForm = document.getElementById('signupForm');
+var elForm = document.getElementById('form');
 var elPackage = document.getElementById('package');
 var elPackHint = document.getElementById('packHint');
 var elTerms = document.getElementById('terms');
@@ -25,10 +25,11 @@ function packHint() {
 // Hint for the terms checkbox.
 function checkTermsBox(event) {
    if (!elTerms.checked) {
-      elTermHint = 'If you really want this, you have to agree to our terms.';
+      elTermHint.innerHTML = 'If you really want this, you have to agree to our terms.';
       event.preventDefault();
    } else {
-      elTermHint = "Good, we're glad you see it our way.";
+      elTermHint.innerHTML = "Good, we're glad you see it our way.";
+      event.preventDefault();
    }
 }
 
