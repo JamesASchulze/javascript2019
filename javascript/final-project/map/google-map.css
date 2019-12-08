@@ -7,8 +7,12 @@
    height: 400px;
 }
 
+#msg {
+   margin-top: 35px;
+}
+
 nav {
-   background-color: aqua;
+   /* background-color: aqua; */
    padding: 1px;
 }
 
